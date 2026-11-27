@@ -404,7 +404,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
 .lbl{display:block;font-size:11.5px;font-weight:700;color:var(--navy-2);margin-bottom:7px}
 .hint{margin:8px 0 0;font-size:11px;color:var(--dim);line-height:1.6}
 
-.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;padding:5px;background:var(--line-soft);border-radius:11px;margin-top:9px}
+.seg{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;padding:5px;background:var(--line-soft);border-radius:11px;margin-top:9px}
 .seg button{
   padding:9px 4px;border-radius:8px;font-size:11.5px;font-weight:600;color:var(--muted);
   transition:all .16s ease;line-height:1.35;
@@ -518,7 +518,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
         <span class="brand-sub">GOWOON ARCHITECTS · SEJONG</span>
       </span>
     </div>
-    <a class="head-call" href="tel:0448660825">
+    <a class="head-call" href="tel:01032330825">
       <svg><use href="#i-phone"/></svg>전화
     </a>
   </header>
@@ -527,7 +527,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
   <section class="hero">
     <div class="hero-img">
       <span class="hero-badge">세종시 보람동 · 2012년부터</span>
-      <img src="gowoon_hero.jpg" alt="현대 건축물과 모듈러 유닛, 설계 도면이 겹쳐진 이미지" width="1200" height="800" fetchpriority="high">
+      <img src="gowoon_hero.jpg?v=2" alt="맑은 낮, 흰 콘크리트와 목재로 마감한 현대 건축물 두 동과 조경된 마당을 위에서 내려다본 사진" width="1100" height="733" fetchpriority="high">
     </div>
     <div class="hero-body">
       <p class="kicker">건축 설계 · 인허가 · 감리</p>
@@ -537,7 +537,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
         그리고 공사비를 실제로 낮추는 설계. 고운이 한 창구에서 진행합니다.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="tel:0448660825"><svg><use href="#i-phone"/></svg>전화 상담</a>
+        <a class="btn btn-primary" href="tel:01032330825"><svg><use href="#i-phone"/></svg>전화 상담</a>
         <button class="btn btn-ghost" type="button" id="goContact"><svg><use href="#i-msg"/></svg>상담 신청</button>
       </div>
     </div>
@@ -577,7 +577,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
     <dl class="spec">
       <div class="spec-row"><dt>상호</dt><dd>주식회사 고운종합건축사사무소</dd></div>
       <div class="spec-row"><dt>대표</dt><dd>김기현 건축사 <small>2012년 개업 · 고건축·현대건축</small></dd></div>
-      <div class="spec-row"><dt>사무소</dt><dd>세종특별자치시 한누리대로 2144<small>(보람동, 스마트허브Ⅱ) 8층 802호</small></dd></div>
+      <div class="spec-row"><dt>사무소</dt><dd>세종특별자치시 한누리대로 2144<small>(보람동, 스마트허브Ⅱ) 8층 802B호</small></dd></div>
       <div class="spec-row"><dt>대표전화</dt><dd><a href="tel:0448660825">044-866-0825</a></dd></div>
       <div class="spec-row"><dt>실적</dt><dd>누적 229건+ 설계·인허가<small>단독주택 111건, 근생·호텔·수련원 14건 외</small></dd></div>
       <div class="spec-row"><dt>대응 범위</dt><dd>전국 · 한옥·스테이·현대건축·용도변경·모듈러</dd></div>
@@ -590,7 +590,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
       <a class="link-btn" href="https://clip.naver.com/@khkim3233" target="_blank" rel="noopener">
         <svg><use href="#i-clip"/></svg>네이버 클립
       </a>
-      <a class="link-btn wide" href="hanok.html">
+      <a class="link-btn wide" href="kgh.html">
         <svg><use href="#i-house"/></svg>한옥 전문 페이지 바로 보기
       </a>
     </div>
@@ -898,15 +898,14 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
       <div>
         <span class="lbl">상담 받을 담당</span>
         <div class="seg" role="group" aria-label="상담 담당 선택">
-          <button type="button" aria-pressed="true" data-who="yhs" data-tel="01082249300" data-name="유현숙 이사">유현숙 이사<small>010-8224-9300</small></button>
           <button type="button" aria-pressed="false" data-who="office" data-tel="0448660825" data-name="사무소 대표전화">사무소<small>044-866-0825</small></button>
-          <button type="button" aria-pressed="false" data-who="kgh" data-tel="01032330825" data-name="김기현 대표">김기현 대표<small>010-3233-0825</small></button>
+          <button type="button" aria-pressed="true" data-who="kgh" data-tel="01032330825" data-name="김기현 대표">김기현 대표<small>010-3233-0825</small></button>
         </div>
       </div>
 
       <div class="cta-row" style="margin-top:2px">
-        <a class="btn btn-terra" id="btnSms" href="sms:01082249300"><svg><use href="#i-msg"/></svg>문자로 상담 신청</a>
-        <a class="btn btn-primary" id="btnTel" href="tel:01082249300"><svg><use href="#i-phone"/></svg>전화로 통화</a>
+        <a class="btn btn-terra" id="btnSms" href="sms:01032330825"><svg><use href="#i-msg"/></svg>문자로 상담 신청</a>
+        <a class="btn btn-primary" id="btnTel" href="tel:01032330825"><svg><use href="#i-phone"/></svg>전화로 통화</a>
       </div>
       <p class="hint" id="smsHint">문자 앱이 열리면 내용을 확인하고 보내주세요. 앱이 열리지 않으면 <button type="button" id="copyMsg" style="text-decoration:underline;color:var(--navy);font-weight:700">상담 내용 복사</button>로 보내실 수 있습니다.</p>
     </form>
@@ -939,13 +938,8 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
           <a class="go" href="tel:01032330825">전화</a>
         </div>
         <div class="cb-row">
-          <span class="ic"><svg><use href="#i-phone"/></svg></span>
-          <span class="tx"><b>010-8224-9300</b><span>유현숙 이사 · 상담 담당</span></span>
-          <a class="go" href="tel:01082249300">전화</a>
-        </div>
-        <div class="cb-row">
           <span class="ic"><svg><use href="#i-pin"/></svg></span>
-          <span class="tx"><b>세종시 한누리대로 2144</b><span>(보람동, 스마트허브Ⅱ) 8층 802호</span></span>
+          <span class="tx"><b>세종시 한누리대로 2144</b><span>(보람동, 스마트허브Ⅱ) 8층 802B호</span></span>
           <button class="go" type="button" id="copyAddr">복사</button>
         </div>
 
@@ -964,7 +958,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
     <div class="fm"><svg><use href="#i-house"/></svg></div>
     <b>주식회사 고운종합건축사사무소</b>
     <p>
-      세종특별자치시 한누리대로 2144 (보람동, 스마트허브Ⅱ) 8층 802호 · 대표 김기현<br>
+      세종특별자치시 한누리대로 2144 (보람동, 스마트허브Ⅱ) 8층 802B호 · 대표 김기현<br>
       대표전화 <a href="tel:0448660825">044-866-0825</a> · 블로그 <a href="https://blog.naver.com/khkim3233" target="_blank" rel="noopener">blog.naver.com/khkim3233</a>
     </p>
     <p style="margin-top:12px">
@@ -978,7 +972,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
 
 <!-- ============ 하단 도크 ============ -->
 <div class="dock">
-  <a class="main" href="tel:0448660825"><svg><use href="#i-phone"/></svg>전화 상담</a>
+  <a class="main" href="tel:01032330825"><svg><use href="#i-phone"/></svg>전화 상담</a>
   <button type="button" id="dockSms"><svg><use href="#i-msg"/></svg>문자 문의</button>
   <button type="button" id="dockSave"><svg><use href="#i-save"/></svg>명함 저장</button>
 </div>
@@ -1038,7 +1032,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
   });
 
   /* ---------- 담당 선택 ---------- */
-  var who = { tel: '01082249300', name: '유현숙 이사' };
+  var who = { tel: '01032330825', name: '김기현 대표' };
   var segBtns = $$('.seg button');
   segBtns.forEach(function(b){
     b.addEventListener('click', function(){
@@ -1141,7 +1135,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
   });
 
   /* ---------- 주소 복사 ---------- */
-  var ADDR = '세종특별자치시 한누리대로 2144 (보람동, 스마트허브Ⅱ) 8층 802호';
+  var ADDR = '세종특별자치시 한누리대로 2144 (보람동, 스마트허브Ⅱ) 8층 802B호';
   var ca = $('#copyAddr');
   if(ca) ca.addEventListener('click', function(){ copyText(ADDR, '주소를 복사했습니다'); });
 
@@ -1156,7 +1150,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
       'TITLE:' + o.title,
       'TEL;TYPE=CELL:' + o.cell,
       o.office ? 'TEL;TYPE=WORK,VOICE:' + o.office : '',
-      'ADR;TYPE=WORK:;;한누리대로 2144 (보람동, 스마트허브Ⅱ) 8층 802호;세종특별자치시;;;대한민국',
+      'ADR;TYPE=WORK:;;한누리대로 2144 (보람동, 스마트허브Ⅱ) 8층 802B호;세종특별자치시;;;대한민국',
       'URL:https://rujin200-coder.github.io/gowoon/',
       'NOTE:' + o.note,
       'END:VCARD'
@@ -1164,8 +1158,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
   }
   var ORG = '주식회사 고운종합건축사사무소';
   var VCARDS =
-    vcard({family:'김', given:'기현', fn:'김기현 (' + ORG + ' 대표)', org:ORG, title:'대표 건축사', cell:'010-3233-0825', office:'044-866-0825', note:'건축설계·인허가·감리'}) + '\r\n' +
-    vcard({family:'유', given:'현숙', fn:'유현숙 (' + ORG + ' 이사)', org:ORG, title:'이사 · 상담 담당', cell:'010-8224-9300', office:'', note:'상담·홍보 담당'}) + '\r\n';
+    vcard({family:'김', given:'기현', fn:'김기현 (' + ORG + ' 대표)', org:ORG, title:'대표 건축사', cell:'010-3233-0825', office:'044-866-0825', note:'건축설계·인허가·감리'}) + '\r\n';
 
   function downloadVcf(){
     try{
