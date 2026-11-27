@@ -88,9 +88,9 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
   display:grid;place-items:center;box-shadow:0 4px 12px rgba(18,37,57,.22);
 }
 .brand-mark svg{width:20px;height:20px;stroke:#E8C88F;fill:none;stroke-width:1.5}
-.brand-txt{min-width:0}
-.brand-name{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:-.01em;line-height:1.2;white-space:nowrap}
-.brand-sub{font-size:10px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase;line-height:1.4}
+.brand-txt{min-width:0;display:block}
+.brand-name{display:block;font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:-.01em;line-height:1.2;white-space:nowrap}
+.brand-sub{display:block;font-size:9.5px;letter-spacing:.13em;color:var(--dim);text-transform:uppercase;line-height:1.5;white-space:nowrap}
 .head-call{
   display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;
   padding:8px 13px;border-radius:999px;background:var(--navy);color:#fff;
@@ -223,15 +223,15 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
 
 /* ================= 탭 ================= */
 .tabs-wrap{position:relative;margin:0 -22px;padding:0 22px}
-.tabs{display:flex;gap:7px;overflow-x:auto;padding:16px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.tabs::-webkit-scrollbar{display:none}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:16px 0 2px}
 .tab{
-  flex:0 0 auto;padding:9px 14px;border-radius:999px;background:var(--paper);
+  display:flex;align-items:center;justify-content:flex-start;gap:6px;
+  padding:11px 12px;border-radius:11px;background:var(--paper);
   border:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--muted);
-  white-space:nowrap;transition:all .18s ease;
+  white-space:nowrap;transition:all .18s ease;text-align:left;
 }
 .tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff;box-shadow:0 6px 16px rgba(18,37,57,.22)}
-.tab b{font-weight:800;margin-right:4px;color:var(--gold)}
+.tab b{font-weight:800;margin-right:2px;color:var(--gold)}
 .tab[aria-selected="true"] b{color:#E8C88F}
 
 .panel{display:none;animation:fade .3s ease both}
@@ -639,7 +639,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
       <div class="tabs" role="tablist" aria-label="5대 전문 영역">
         <button class="tab" role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" data-tab="1"><b>01</b>인허가 단축</button>
         <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" data-tab="2"><b>02</b>세움터·대관</button>
-        <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" data-tab="3"><b>03</b>모듈러주택</button>
+        <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" data-tab="3"><b>03</b>모듈러</button>
         <button class="tab" role="tab" id="tab-4" aria-selected="false" aria-controls="panel-4" data-tab="4"><b>04</b>공사비 절감</button>
       </div>
     </div>
@@ -1171,7 +1171,7 @@ input,select,textarea{font-family:inherit;font-size:16px;color:inherit}
 
   function downloadVcf(){
     try{
-      var blob = new Blob(['\ufeff' + VCARDS], {type:'text/vcard;charset=utf-8'});
+      var blob = new Blob([VCARDS], {type:'text/vcard;charset=utf-8'});
       var url = URL.createObjectURL(blob);
       var a = document.createElement('a');
       a.href = url;
